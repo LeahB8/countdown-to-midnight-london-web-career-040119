@@ -2,16 +2,21 @@
 
 
 def countdown(seconds_to_midnight)
-  number = 10
-  while number > 0
-    puts "#{number} SECOND(S)!"
-    break if number == 0
-    number -= 1
+  seconds_to_midnight = 10
+  while seconds_to_midnight > 0
+    puts "#{seconds_to_midnight} SECOND(S)!"
+    break if seconds_to_midnight == 0
+    seconds_to_midnight -= 1
   end
   return "HAPPY NEW YEAR!"
 end 
 
-def countdown_with_sleep(num_secs)
-  num_secs >= 5
-end  
+def countdown_with_sleep(seconds_to_midnight)
+  while seconds_to_midnight > 0
+    puts "#{seconds_to_midnight} SECOND(S)!"
+    sleep(1)
+    seconds_to_midnight -= 1
+  end  
+  return "HAPPY NEW YEAR!"
+end
 
