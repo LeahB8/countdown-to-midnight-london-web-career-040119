@@ -1,7 +1,7 @@
 #write your code here
 
 
-def countdown(number)
+def countdown(seconds_to_midnight)
   number = 10
   while number > 0
     puts "#{number} SECOND(S)!"
